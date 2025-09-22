@@ -45,3 +45,9 @@
 #  - 예외로 변수이름을 모두 대문자 사용
 #  - Python은 상수 문법 존재 X
 MAX_VALUE = 3
+
+# 6. 동적 출력
+print("123")  # 하드 코딩(고정 값), 지양
+
+student_grade = 3
+print(student_grade)  # 3 출력
