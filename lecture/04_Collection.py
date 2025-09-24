@@ -13,6 +13,7 @@
 #  - mutable(생성 후 값 변경 가능)
 #  - packing과 unpacking 가능
 #  - 멤버함수 존재(append(), insert(), ...)
+#  - 문자열을 리스트로 표현
 str = "abc"  # ["a", "b", "c"]
 a = [1, 2, 3] # packing
 b, c, d = [1, 2, 3] #unpacking
@@ -63,3 +64,81 @@ a = sorted(a, reverse=True)  # 내림차순
 
 # Tip: 데이터 분석or 인공지능 데이터 활용
 #      -> 원본 데이터는 유지, 복제 사용
+
+
+# 2. 튜플(Tuple) *못 바꿈
+#  - 시퀀스 자료형
+#  - index 사용(슬라이싱 가능)
+#  - () 사용, () 생략 가능
+#  - immutable(생성 후 값 변경 불가능)
+#  - packing과 unpacking 가능
+a = [1, 2, 3]  #리스트
+b = (1, 2, 3)  #튜플
+c = 1, 2, 3    #튜플
+d = (5)        #튜플
+e = 5          #정수 int
+f = 5,         #튜플
+
+# 3. 딕셔너리(Dictionary) ex: 복주머니
+#  - 순서가 없음(Non-시퀀스)
+#  - 인덱스 없음
+#  - {} 사용
+#  - {key:value} 데이터 구조 사용
+#  - value는 중복 가능
+#  - value는 key로만 접근 가능
+a = {
+    "Korea": "Seoul",
+    "Canada": "Ottwa",
+    "USA": 3.14
+}
+
+# dict 항목 추가 및 변경
+#  - 기존에 key가 존재하지 않으면 update(수정)
+#  - 기존에 key가 존재하지 않으면 insert(삽입)
+a["Japan"] = "Tokyo"  # insert
+a["Japan"] = "Kyoto"  # update
+
+# dict 항목 삭제(key를 사용)
+#  - del 키워드
+#  - pop 함수 이용
+del a["Japan"]  # 사용 금지
+a.pop("Janan")
+
+# dict 병합
+# - update()
+a = {"a":1, "b":2}
+b = {"a":2, "c":5}
+a.update(b)
+print(a)  # a:2 b:2 c:5
+
+# clear()
+#  - 딕셔너리의 모든 값을 초기화
+a.clear()
+
+# in()
+#  - dict안데 key가 존재하는지 확인
+print("Japan" in a)
+
+# Value Access
+print(a["Japan"])  # "Japan" key 없으면 오류
+print(a.get("Japan"))  #"Japan" key 없으면 None 반환 (지향)
+
+# 모든 key, value 접근
+#  - keys()   : Key만 추출
+#  - values() : Value만 추출
+#  - items()  : Key+Value 추출(튜플 타입)
+print(list(a.keys()))
+print(list(a.values()))
+print(list(a.items()))
+
+# 4. 세트(Set)
+#  - 순서 없음, 인덱스 없음
+#  - {} 사용
+#  - 수학의 집합
+#  - *중복값을 허용하지 않음* - 중복값을 제거하고 싶을 때 빼고는 안 씀
+set_a = {1, 2, 3, 2, 2, 2, 2}  # Set {1, 2, 3}
+aa = {}  # 딕셔너리
+
+list_c = [1, 2, 3, 2, 3, 4, 5]  # 리스트
+set(list_c)  # 세트(중복값 제거) {1, 2, 3, 4, 5}
+list(ser(list_c))  # [1, 2, 3, 4, 5] *외워
