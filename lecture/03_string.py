@@ -27,12 +27,13 @@ print(lang[-3])  # h
 #  - 문자열 슬라이싱의 끝 인덱스 값 -1
 #  - [시작:끝]
 msg = "Python is all you need"
-print(msg[0:6])  # 0~5, Python
+print(msg[0:6])  # 끝에는 무조건 -1, 0~5, Python
 print(msg[:6])   # 시작 생략(처음부터)
 print(msg[3:])   # 끝 생략(끝까지)
 print(msg[:])    #시작, 끝 생략(처음부터 끝까지)
-
-#   kwu
+# 예: email 가입
+# kwu123@kwu.ac.kr 가입
+# kwu123을 id값으로 사용(문자열 추출(슬라이싱 이용))
 
 # 5. 문자열 함수
 str = "Hello World"
@@ -52,7 +53,7 @@ print(str.split())  #Default(암것도 없으면 공백 기준으로 쪼개짐) 
 print(str.split("o"))  # "Hell", "W", "rld"
 
 # 5-5. strip() : 문자열의 좌우공백 제거
-print(Str.strip())
+print(Str.strip()) # 회원가입 등 적을 때 공복이 생기는 걸 방지
 
 # 5-6. in() : 특정 문자열 포함하는지 확인(True, False)
 print("Hello", in str)  # True
@@ -60,9 +61,9 @@ print("Hello", in str)  # True
 # 5-7. find() and rfind() : 문자열의 특정 문자의 인덱스 출력
 print(str.find("o"))  # 4
 print(str.rfind("o")) # 7
-print(str.find("World")) #6,단어의 첫글자 인덱스
+print(str.find("World")) #7,단어의 첫글자 인덱스
 
-# 6. f-strin
+# 6. f-string
 grade = 3
 name = "서우리"
 
