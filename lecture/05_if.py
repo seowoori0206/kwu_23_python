@@ -1,3 +1,5 @@
+# 이프 포 코드나옴 코드이거치면 뭐나올까 에러가나는데 어떻게고치면될까요 문제 나옴
+
 # 제어문(Control Language)
 #  1. 조건문(Condition Lang)
 #  - 특정 조건이 참(True)이면 ~해라
@@ -26,7 +28,7 @@
 
 if 2 > 0:
     pass
-elif 3 > 0
+elif 3 > 0:
     pass
 else:
     pass

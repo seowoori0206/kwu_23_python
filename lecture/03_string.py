@@ -1,4 +1,4 @@
-# 문자열
+# 문자열 * 시험
 
 # 1. 문자열 인덱스(index)
 #  - 문자열은 각 문자마다 순서(인덱스)가 있음
@@ -13,7 +13,7 @@ print("Python")
 lang = "Python"
 print(lang[0])  # P
 print(lang[2])  # t
-print(lang[10]) # Error: index out of range
+# print(lang[10]) # Error: index out of range
 
 # 3. 역 인덱스(Reverse index)
 #  - 인덱스(좌 -> 우, 0 시작)
@@ -35,7 +35,7 @@ print(msg[:])    #시작, 끝 생략(처음부터 끝까지)
 # kwu123@kwu.ac.kr 가입
 # kwu123을 id값으로 사용(문자열 추출(슬라이싱 이용))
 
-# 5. 문자열 함수
+# 5. 문자열 함수 * 시험 전부 외워
 str = "Hello World"
 
 # 5-1. len() : 문자열 길이
@@ -61,7 +61,7 @@ print("Hello", in str)  # True
 # 5-7. find() and rfind() : 문자열의 특정 문자의 인덱스 출력
 print(str.find("o"))  # 4
 print(str.rfind("o")) # 7
-print(str.find("World")) #7,단어의 첫글자 인덱스
+print(str.find("World")) #6,단어의 첫글자 인덱스
 
 # 6. f-string
 grade = 3
