@@ -18,3 +18,8 @@
 # 아이콘
 # 대표색상(+ 2가지 보조 색상 + 배경 색상) LOL COLOR / Color Space / css gradient
 # 웹폰트 구글웹폰트검색, korean선택, 5개정도 골라와
+
+#빌려서 GPt API 사용
+#  ㄴ 사용한 만큼 지불
+#  ㄴ platform.openai.com -> 로그인 -> 카드등록 -> API-key 발급
+#  ㄴ API-key 절대 유출되면 안 됨
