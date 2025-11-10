@@ -57,9 +57,9 @@ system_prompt = """
 """
 
 prompt = ChatPromptTemplate.from_messages([
-    ("system", system_prompt),                         # System Prompt
+    ("system", system_prompt),                          # System Prompt
     MessagesPlaceholder(variable_name="chat_history"),  # Chat History
-    ("human", "{query}"),                              # Human Prompt
+    ("human", "{query}"),                               # Human Prompt
 ])
 
 # 4. chain 생성
