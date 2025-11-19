@@ -7,12 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend+Deca:wght@100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap');
+
+
+
 
 /* 공통사항 */
 * { box-sizing: border-box; }
 html, body { font-size: 62.5%; }
 body {
-	font-family: "Chiron Hei HK", sans-serif;
+	font-family: "Chiron GoRound TC", sans-serif;
 	margin: 0;
 	padding: 0;
 	color: #2F3138;
