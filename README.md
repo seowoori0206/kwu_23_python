@@ -37,3 +37,27 @@
   - git commit -m "내용" : 버전 생성
   - git add와 commit 로컬에서 행위(글로벌 변화 X)
   - git push origin main : Local의 commit으로 생성한 버전을 글로벌에 업로드
+
+## 2. Project Chatbot
+### 2-1. 구조
+- frontend: 사용자 화면 인터페이스
+- backend: 서비스
+  ㄴ ai(langchain)
+  ㄴ database
+
+### 2-2. frontend
+- 웹 표준: HTML, CSS, Javascript
+- -> 프론트엔드 프레임워크: React.js, Vue.js, ...
+
+### 2-3. backend
+- Python: Django(web), Flask, FastAPI(AI)
+- -> FastAPI 점유율↑
+- main(컨트롤타워) -> router(기능별 분류) -> service(실제 동작) -> crud(DB)
+
+### 2-4. Chatbot(AI)
+- Langchain(프레임워크) + OpenAI GPT(model)
+- -> 고도화: LangChain + LangGraph + Model
+
+### 2-5. Database
+- PostgreSQL 사용 (Hybrid DB)
+-   ㄴ RDB + NoSQL
